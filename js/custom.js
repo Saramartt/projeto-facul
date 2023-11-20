@@ -223,11 +223,11 @@ $('.nonloop').owlCarousel({
 function calcularIMC(){
   var formulario = document.querySelector(".testezin")  
   console.log(formulario)
-  
   var kilos = +formulario.kilos.value;
   var altura = +formulario.altura.value;
- 
+  
   var imc = kilos / (altura * altura);
+  
   
   formulario.imc.value = imc.toFixed(2);
 }
@@ -237,8 +237,12 @@ function calcularIMC2(){
   
   var kilos = +formulario.kilos.value;
   var altura = +formulario.altura.value;
- 
+
+  console.log(+formulario)
+ console.log(altura)
   var imc = kilos / (altura * altura);
+
+  console.log(imc)
   
   formulario.imc.value = imc.toFixed(2);
 }
